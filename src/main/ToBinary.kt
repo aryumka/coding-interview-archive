@@ -10,8 +10,9 @@ class ToBinary {
     //결국 모든 이진수에서 0을 제거하여 반복하면 1이 됨
     while (str != "1") {
       times++
-      zeros += str.replace("1", "").length
-      str = str.replace("0", "").length.toString(2)
+      val newStr = str.replace("0", "")
+      zeros += newStr.length - str.length
+      str = newStr.length.toString(2)
     }
     return intArrayOf(times, zeros)
   }
