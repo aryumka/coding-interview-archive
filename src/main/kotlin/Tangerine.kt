@@ -1,6 +1,6 @@
 class Tangerine {
   fun solution(k: Int, tangerine: IntArray): Int {
-    var answer: Int = 0
+    var answer = 0
 
     val tangerineList = tangerine.groupBy { it }
       .mapValues { it.value.size }
