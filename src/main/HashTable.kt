@@ -1,5 +1,5 @@
 
-class Solution {
+class HashTable {
   fun solution(data: Array<IntArray>, col: Int, row_begin: Int, row_end: Int): Int {
     val sortedData = data.sortedWith(
       compareBy<IntArray> {
